@@ -26,7 +26,7 @@ function insertNumber(num) {
         if(Number(positionVal2) > formattedVal.length-1) return formattedVal;
         const phoneNum = formattedVal.substring(0,Number(positionVal1)) + num + formattedVal.substring(Number(positionVal2)+1);
         if(phoneNum == formattedVal) return
-        const formattedPhoneNumber = `+1 ${phoneNum.substring(0,3)}-${phoneNum.substring(3,6)}-${phoneNum.substring(6)}`
+        const formattedPhoneNumber = `(${phoneNum.substring(0,3)}) ${phoneNum.substring(3,6)}-${phoneNum.substring(6)}`
         return numberArray.push(formattedPhoneNumber)
  
 }
@@ -41,8 +41,8 @@ for (let i = 0; i < 100; i++) {
   }  
 }
 numberArray.forEach(number => {
-const li = document.createElement("li");
-const num = document.createTextNode(number)
+const li = document.createElement("span");
+const num = document.createTextNode(`${number},`)
 li.appendChild(num);
 ul.appendChild(li)
 })
