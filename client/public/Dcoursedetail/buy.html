@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Udema a modern educational site template">
+    <meta name="author" content="Ansonika">
+    <title>Buy Course</title>
+    
+    <!-- Favicons-->
+    <link rel="icon" type="image/png" href="../img/faslearnBlack.png">
+    <link rel="shortcut icon" href="../img/faslearnBlack.png" type="image/png">
+    <link rel="apple-touch-icon" type="image/x-icon" href="img/apple-touch-icon-57x57-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="72x72" href="img/apple-touch-icon-72x72-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="114x114" href="img/apple-touch-icon-114x114-precomposed.png">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="144x144" href="img/apple-touch-icon-144x144-precomposed.png">
+    
+    <!-- GOOGLE WEB FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    
+    <!-- BASE CSS -->
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/vendors.css" rel="stylesheet">
+    <link href="../css/icon_fonts/css/all_icons.min.css" rel="stylesheet">
+    
+    <!-- YOUR CUSTOM CSS -->
+    <link href="../css/custom.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="page" class="theia-exception">
+    
+        <header class="header menu_2" style="position: relative; background-color: #EF6421; margin-bottom: -100px;">
+            <div id="preloader">
+                <div data-loader="circle-side"></div>
+            </div><!-- /Preload -->
+            <div id="logo" >
+                <a href="/dashboard"><img src="../img/faslearnWhite.png" width="149" height="49" alt=""></a>
+            </div>
+            <ul id="top_menu">
+                <li class="hidden_tablet"><a href="/dashboard" class="btn_1 rounded">Back to Course</a></li>
+            </ul>
+            <!-- /top_menu -->
+        
+            <!-- Search Menu -->
+            <!-- <div class="search-overlay-menu">
+                <span class="search-overlay-close"><span class="closebt"><i class="ti-close"></i></span></span>
+                <form role="search" id="searchform" method="get">
+                    <input value="" name="q" type="search" placeholder="Search..." />
+                    <button type="submit"><i class="icon_search"></i>
+                    </button>
+                </form>
+            </div> -->
+            <!-- End Search Menu -->
+        </header>
+        <!-- /header -->
+    
+        <main id="item" style="display: block; background-color: #EF6421;" >
+            <section id="hero_in" class="cart_section" style="background-color: #EF6421;">
+                <div class="wrapper" >
+                    <div class="container">
+                        <div class="bs-wizard clearfix">
+                            <div class="bs-wizard-step active" onclick="switchPhase('item')">
+                                <div class="text-center bs-wizard-stepnum">Your cart</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#0" class="bs-wizard-dot" style="background-color: #EF6421;"></a>
+                            </div>
+    
+                            <div class="bs-wizard-step disabled" onclick="switchPhase('payment')">
+                                <div class="text-center bs-wizard-stepnum">Payment</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#0" class="bs-wizard-dot" style="background-color: #EF6421;"></a>
+                            </div>
+    
+                            <div class="bs-wizard-step disabled" >
+                                <div class="text-center bs-wizard-stepnum">Finish!</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#0" class="bs-wizard-dot" style="background-color: #EF6421;"></a>
+                            </div>
+                        </div>
+                        <!-- End bs-wizard -->
+                    </div>
+                </div>
+            </section>
+            <!--/hero_in-->
+    
+            <div class="bg_color_1">
+                <div class="container margin_60_35">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="box_cart">
+                                <table class="table table-striped cart-list">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Item
+                                            </th>
+                                            <th>
+                                                Discount
+                                            </th>
+                                            <th>
+                                                Price
+                                            </th>
+                                            <th>
+                                                Actions
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="tbody">
+                                        
+
+
+                                    </tbody>
+                                </table>
+                                <div class="cart-options clearfix">
+                                    <div class="float-left">
+                                        <div class="apply-coupon">
+                                            <!-- <div class="form-group">
+                                                <input type="text" name="coupon-code" value=""
+                                                    placeholder="Your Coupon Code" class="form-control">
+                                            </div>
+                                            
+                                            <div class="form-group">
+                                                <button type="button" onclick="switchPhase('payment')">Continue</button>
+                                            </div> -->
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="float-right fix_mobile">
+                                        <button type="button" class="btn_1 outline" onclick="switchPhase('payment')">Continue</button>
+                                    </div>
+                                </div>
+                                <!-- /cart-options -->
+                            </div>
+                        </div>
+                        <!-- /col -->
+    
+                        <aside class="col-lg-4" id="sidebar">
+                            <div class="box_detail">
+                                <div id="total_cart">
+                                    Total <span class="float-right" id="total">00.00</span>
+                                </div>
+                                <div class="add_bottom_30">Purchase courses securely now
+                                    <!-- <strong>moderatius</strong>
+                                    ad. Ex eius soleat sanctus pro, enim conceptam in quo, <a href="#0">brute convenire</a>
+                                    appellantur an mei. -->
+                                </div>
+                                <!-- <a href="cart-2.html" class="btn_1 full-width">Checkout</a>
+                                <a href="courses-grid-sidebar.html" class="btn_1 full-width outline"><i
+                                        class="icon-right"></i> Continue Shopping</a> -->
+                            </div>
+                        </aside>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /bg_color_1 -->
+        </main>
+
+        <main id="payment" style="display: none; background-color: #EF6421;">
+            <section id="hero_in" class="cart_section" style="background-color: #EF6421;">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="bs-wizard clearfix">
+                            <div class="bs-wizard-step" onclick="switchPhase('item')">
+                                <div class="text-center bs-wizard-stepnum">Your cart</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#" style="background-color: #EF6421;" class="bs-wizard-dot"></a>
+                            </div>
+        
+                            <div class="bs-wizard-step active" onclick="switchPhase('payment')">
+                                <div class="text-center bs-wizard-stepnum">Payment</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#0" style="background-color: #EF6421;" class="bs-wizard-dot"></a>
+                            </div>
+        
+                            <div class="bs-wizard-step disabled"  onclick="switchPhase('complete')">
+                                <div class="text-center bs-wizard-stepnum">Finish!</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#0" style="background-color: #EF6421;" class="bs-wizard-dot"></a>
+                            </div>
+                        </div>
+                        <!-- End bs-wizard -->
+                    </div>
+                </div>
+            </section>
+            <!--/hero_in-->
+        
+            <div class="bg_color_1">
+                <div class="container margin_60_35">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="box_cart">
+                                <!-- <div class="message">
+                                    <p>Exisitng Customer? <a href="#0">Click here to login</a></p>
+                                </div> -->
+                                <div class="form_title">
+                                    <h3><strong>1</strong>Your Details</h3>
+                                    <p>
+                                        Mussum ipsum cacilds, vidis litro abertis.
+                                    </p>
+                                </div>
+                                <div class="step">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <span class="input">
+                                                <input class="input_field" type="text" id="first-namevv">
+                                                <label class="input_label">
+                                                    <span class="input__label-content"></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <span class="input">
+                                                <input class="input_field" type="text">
+                                                <label class="input_label">
+                                                    <span class="input__label-content">Last name</span>
+                                                </label>
+                                            </span>
+                                        </div> -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <span class="input">
+                                                <input class="input_field" type="email" id="email-addressv">
+                                                <label class="input_label">
+                                                    <span class="input__label-content"></span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                        <!-- <div class="col-sm-6">
+                                            <span class="input">
+                                                <input class="input_field" type="email">
+                                                <label class="input_label">
+                                                    <span class="input__label-content">Confirm email</span>
+                                                </label>
+                                            </span>
+                                        </div> -->
+                                    </div>
+                                    <!-- <div class="row">
+                                        <div class="col-sm-6">
+                                            <span class="input">
+                                                <input class="input_field" type="text">
+                                                <label class="input_label">
+                                                    <span class="input__label-content">Telephone</span>
+                                                </label>
+                                            </span>
+                                        </div>
+                                    </div> -->
+                                    <form id="paymentForm">
+                                        <div class="form-group" style="display: none;">
+                                            <label for="email">Email Address</label>
+                                            <input type="email" id="email-address" required />
+                                        </div>
+                                        <div class="form-group" style="display: none;">
+                                            <label for="amount">Amount</label>
+                                            <input type="tel" id="amount" required />
+                                        </div>
+                                        <div class="form-group" style="display: none;">
+                                            <label for="first-name">First Name</label>
+                                            <input type="text" id="first-name" />
+                                        </div>
+                                        <div class="form-group" style="display: none;">
+                                            <label for="last-name">Last Name</label>
+                                            <input type="text" id="last-name" />
+                                        </div>
+                                        <div class="form-submit">
+                                            <button type="submit" onclick="payWithPaystack()" id="summ"> Pay Now </button>
+                                        </div>
+                                        <style>
+                                            #summ{
+                                                width: 80px;
+                                                height: 40px;
+                                                color: white;
+                                                background-color: #EF6421;
+                                                border-radius: 10px;
+                                            }
+                                        </style>
+                                    </form>
+                                </div>
+                                <hr>
+                                <!--End step -->
+                            </div>
+                        </div>
+                        <!-- /col -->
+        
+                        <aside class="col-lg-4" id="sidebar">
+                            <div class="box_detail">
+                                <div id="total_cart">
+                                    Total <span class="float-right" id="total2">00.00</span>
+                                </div>
+                                <div class="add_bottom_30">
+                                    Make Payment securely
+                                </div>
+                                <!-- <a href="cart-3.html" class="btn_1 full-width">Checkout</a>
+                                <a href="courses-grid-sidebar.html" class="btn_1 full-width outline"><i class="icon-right"></i>
+                                    Continue Shopping</a> -->
+                            </div>
+                        </aside>
+                    </div>
+                    <!-- /row -->
+                </div>
+                <!-- /container -->
+            </div>
+            <!-- /bg_color_1 -->
+        </main>
+
+        <main id="complete" style="display: none; background-color: #EF6421;">
+            <section id="hero_in" class="cart_section" style="background-color: #EF6421;">
+                <div class="wrapper">
+                    <div class="container">
+                        <div class="bs-wizard clearfix">
+                            <div class="bs-wizard-step">
+                                <div class="text-center bs-wizard-stepnum">Your cart</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#" class="bs-wizard-dot"></a>
+                            </div>
+        
+                            <div class="bs-wizard-step">
+                                <div class="text-center bs-wizard-stepnum">Payment</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#" class="bs-wizard-dot"></a>
+                            </div>
+        
+                            <div class="bs-wizard-step active">
+                                <div class="text-center bs-wizard-stepnum">Finish!</div>
+                                <div class="progress">
+                                    <div class="progress-bar"></div>
+                                </div>
+                                <a href="#" class="bs-wizard-dot"></a>
+                            </div>
+                        </div>
+                        <!-- End bs-wizard -->
+                        <div id="confirm">
+                            <h4>Order completed!</h4>
+                            <p id="confirmEmail">You'll receive a confirmation email at mail@example.com</p>
+                        </div>
+                        <a href="/dashboard" class="btn_1 full-width outline"><i class="icon-right"></i>
+                            Take lectures now</a>
+                    </div>
+                </div>
+            </section>
+            <!--/hero_in-->
+        </main>
+        <!--/main-->
+    
+        <footer>
+            <div class="container margin_120_95">
+                <marquee behavior="" direction="">Thank you for your patronage</marquee>
+            </div>
+        </footer>
+        <!--/footer-->
+    </div>
+    <!-- page -->
+    
+    <!-- COMMON SCRIPTS -->
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/common_scripts.js"></script>
+    <script src="../js/main.js"></script>
+    <!-- <script src="assets/validate.js"></script> -->
+    <script>
+        // let url = window.location.search;
+        // let e = url + '';
+        // let all = e.split('=');
+        // let email = all[1];
+        // let amount = all[2];
+        // let name = all[3];
+        // let title = all[4];
+        // let courseId = all[5];
+
+        // let emailValue = getvalue(email);
+        // let amountValue = getvalue(amount);
+        // let nameValue = getvalue(name);
+        // let titleValue = getvalue(title);
+
+        // console.log('email is ' + emailValue);
+        // console.log('amount is ' + amountValue);
+        // console.log('name is ' + nameValue);
+        // console.log('title is ' + titleValue);
+        // console.log('courseId is ' + courseId);
+
+        // document.getElementById('email-address').value = emailValue;
+        // document.getElementById('amount').value = amountValue;
+        // document.getElementById('first-name').value = nameValue;
+
+        // document.getElementById('email-addressv').value = emailValue;
+        // //document.getElementById('amountv').value = amountValue;
+        // document.getElementById('first-namevv').value = nameValue;
+
+        // document.getElementById('title').innerHTML = titleValue;
+        // document.getElementById('price').innerHTML = amountValue;
+
+        // document.getElementById('confirmEmail').innerHTML = "You will receive a confirmation email at "+emailValue;
+        
+        // function getvalue(p) {
+        //     let str = p + '';
+        //     let arr = str.split('&');
+        //     let value = arr[0];
+        //     return value;
+        // };
+
+        function switchPhase(phase) {
+            document.getElementById('item').style.display = 'none';
+            document.getElementById('payment').style.display = 'none';
+            document.getElementById('complete').style.display = 'none';
+            document.getElementById(phase).style.display = 'block';
+        }
+    </script>
+
+    <script>
+        //if cart item is undefined then you ignore
+        
+        let cart = localStorage.getItem('fmrcart')
+        if (cart == '' || cart == null) {
+            cart = [];
+        } else {
+            cart = JSON.parse(localStorage.getItem('fmrcart'));
+        }
+        /*
+        <td class="options" style="width:5%; text-align:center;">
+                <a href="#"><i class="icon-trash"></i></a>
+            </td>
+        */
+
+        var total = 0+0;
+        var email = '';
+        for (let index = 0; index < cart.length; index++) {
+            const item = cart[index];
+            if (item === 'undefined') {
+                console.log('ignore')
+            }else{
+                var tr = document.createElement("tr");
+                var tdTitle = document.createElement("td");
+                    tr.appendChild(tdTitle);
+                var  span = document.createElement("span");
+                span.setAttribute("class", "item_cart");
+                span.innerHTML = item.title;
+                tdTitle.appendChild(span);
+
+                var tdDiscount = document.createElement("td");
+                tdDiscount.innerHTML = '0%';
+                tr.appendChild(tdDiscount);
+
+                var tdPrice = document.createElement("td");
+                tdPrice.innerHTML = item.price.$numberDecimal;
+                tr.appendChild(tdPrice);
+
+                var tdAction = document.createElement("td");
+                tdAction.setAttribute("class", "options");
+                tdAction.setAttribute("style", "width:5%; text-align:center;");
+                var ii = item._id;
+                email = item.email;
+                //tdAction.innerHTML = "<i class=\"icon-trash\" onclick=\"deleteItem(ii)\"></i>";
+                tdAction.innerHTML = "<i class=\"icon-ok-circled2\"></i>";
+                tr.appendChild(tdAction);
+                
+                var tbody = document.getElementById("tbody");
+                tbody.appendChild(tr);
+
+                if (item.price.$numberDecimal==null|| item.price.$numberDecimal==''|| item.price.$numberDecimal=='undefined') {
+                    console.log('ignore')
+                }else{
+                    total = parseFloat(total) + parseFloat(item.price.$numberDecimal);
+                    //parseFloat(myInt1) + parseFloat(myInt2) + parseFloat(myInt3)
+                }
+                
+               
+            }
+        }
+        document.getElementById('total').innerHTML = total; 
+        document.getElementById('total2').innerHTML = total;
+        document.getElementById('email-address').value = email;
+        document.getElementById('amount').value = total;
+        document.getElementById('confirmEmail').innerHTML = "You will receive a confirmation email at "+email;
+        document.getElementById('email-addressv').value = email;
+        /*
+        document.getElementById('total').innerHTML = total;
+        function deleteItem(id) {
+            var new_cart = []
+            for (let index = 0; index < cart.length; index++) {
+                const element = cart[index];
+                if (element._id == id) {
+                    new_cart.push(element);
+                }
+                
+            }
+            localStorage.setItem("fmrcart", JSON.stringify(new_cart));
+            newcartlist();
+           // alert(id);
+        }
+
+        function  newcartlist() {
+            alert('done')
+            document.getElementById('tbody').innerHTML = ''
+            let ncart = localStorage.getItem('fmrcart')
+            if (ncart == '' || cart == null) {
+                ncart = [];
+            } else {
+                ncart = JSON.parse(localStorage.getItem('fmrcart'));
+            }
+            var total = 0 + 0;
+            for (let index = 0; index < ncart.length; index++) {
+                const item = ncart[index];
+                if (item === 'undefined') {
+                    console.log('ignore')
+                } else {
+                    var tr = document.createElement("tr");
+                    var tdTitle = document.createElement("td");
+                    tr.appendChild(tdTitle);
+                    var span = document.createElement("span");
+                    span.setAttribute("class", "item_cart");
+                    span.innerHTML = item.title;
+                    tdTitle.appendChild(span);
+
+                    var tdDiscount = document.createElement("td");
+                    tdDiscount.innerHTML = '0%';
+                    tr.appendChild(tdDiscount);
+
+                    var tdPrice = document.createElement("td");
+                    tdPrice.innerHTML = item.price.$numberDecimal;
+                    tr.appendChild(tdPrice);
+
+                    var tdAction = document.createElement("td");
+                    tdAction.setAttribute("class", "options");
+                    tdAction.setAttribute("style", "width:5%; text-align:center;");
+                    var ii = item._id
+                    tdAction.innerHTML = "<i class=\"icon-trash\" onclick=\"deleteItem(ii)\"></i>";
+                    tr.appendChild(tdAction);
+
+                    var tbody = document.getElementById("tbody");
+                    tbody.appendChild(tr);
+
+                    if (item.price.$numberDecimal == null || item.price.$numberDecimal == '' || item.price.$numberDecimal == 'undefined') {
+                        console.log('ignore')
+                    } else {
+                        total = parseFloat(total) + parseFloat(item.price.$numberDecimal);
+                        document.getElementById('total').innerHTML = total;
+                    }
+
+
+                }
+            }
+
+        }
+        */
+   </script>
+
+    
+    <script src="https://js.paystack.co/v1/inline.js"></script>
+
+    <script type="text/javascript">
+        const paymentForm = document.getElementById('paymentForm');
+        paymentForm.addEventListener("submit", payWithPaystack, false);
+        function payWithPaystack(e) {
+            e.preventDefault();
+            let handler = PaystackPop.setup({
+                key: 'pk_test_b66d0123c39e5274812de14cde47231d2011e8d9', // Replace with your public key
+                email: document.getElementById("email-address").value,
+                amount: document.getElementById("amount").value * 100,
+                ref: '' + Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
+                // label: "Optional string that replaces customer email"
+                onClose: function () {
+                    alert('Window closed.');
+                },
+                callback: function (response) {
+                    let message = 'Payment complete! Reference: ' + response.reference;
+                    alert(message);
+                    localStorage.setItem("fmrlastreference", response.reference);
+                    switchPhase('complete')
+                }
+            });
+            handler.openIframe();
+        }
+    </script>
+
+    
+
+</body>
+
+</html>

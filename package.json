@@ -1,0 +1,41 @@
+{
+  "name": "elearning",
+  "version": "1.0.0",
+  "description": "An E-learning platform by FMR Agency",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm run serve --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\" ",
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+  },
+  "keywords": [
+    "E-learning",
+    "Education."
+  ],
+  "author": "FMR Agency",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "bcrypt": "^5.0.0",
+    "concurrently": "^5.3.0",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "crypto-random-string": "^3.3.0",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "get-video-duration": "^3.0.2",
+    "googleapis": "^67.1.0",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.11.10",
+    "multer": "^1.4.2",
+    "nodemailer": "^6.4.17",
+    "uniqid": "^5.2.0",
+    "validator": "^13.5.2",
+    "vimeo": "^2.1.1"
+  },
+  "engines": {
+    "node": "v12.6.0"
+  }
+}
